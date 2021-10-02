@@ -15,7 +15,7 @@ public class maze_blocked {
 			System.out.println(ans);
 			return;
 		}
-		
+		visited[row][col] = true;
 		maze(maze, row - 1, col, visited, ans + "U");
 		maze(maze, row + 1, col, visited, ans + "D");
 		maze(maze, row, col - 1, visited, ans + "L");
